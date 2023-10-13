@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/iconWebStar.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/fontawesome.js"></script>
+    <title>Тур.Агенство Якутии</title>
+</head>
+<body>
+    <!-- меню телефона -->
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a id="logoSubMenu" href="./index.html"><img src="./img/logoykt.png" width="150px"/></a>
+        <span href="#" id="btn-close-subMenu" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></span>
+        <ul>
+            <li><a href="./introduce.html">Представлять</a></li>
+            <li>
+                <a id="btn-mobile-TourNoiDia" href="./TourTrongNuoc.html">Домашний тур <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i><sup><span class="ms-1 badge bg-danger">Скидки</span></sup></a>
+                <ul id="mobile-TourNoiDia" class="hide">
+                    <li>
+                        <a id="btn-mobile-TourNoiDia-Bac" href="#">Северный туризм <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNoiDia-Bac" class="hide">
+                            <li><a href="#">Путешествие Ханой</a></li>
+                            <li><a href="#">Путешествие в Сапу</a></li>
+                            <li><a href="#">Ха Лонг Туризм</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="btn-mobile-TourNoiDia-Trung" href="#">Центральный туризм <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNoiDia-Trung" class="hide">
+                            <li><a href="#">Да Нанг туризм</a></li>
+                            <li><a href="#">Фу Йен Туризм</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="btn-mobile-TourNoiDia-Nam"  href="#">Du Lịch Miền Nam <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNoiDia-Nam" class="hide">
+                            <li><a href="#">Du Lịch Côn Đảo</a></li>
+                            <li><a href="#">Du Lịch Phú Quốc</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a id="btn-mobile-TourNuocNgoai" href="./TourNuocNgoai.html">Tour Nước Ngoài <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                <ul id="mobile-TourNuocNgoai" class="hide">
+                    <li>
+                        <a id="btn-mobile-TourNuocNgoai-A" href="#">Du Lịch Châu Á <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNuocNgoai-A" class="hide">
+                            <li><a href="#">Du Lịch Hàn Quốc</a></li>
+                            <li><a href="#">Du Lịch Nhật Bản</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="btn-mobile-TourNuocNgoai-Au" href="#">Du Lịch Châu Âu <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNuocNgoai-Au" class="hide">
+                            <li><a href="#">Du Lịch Anh</a></li>
+                            <li><a href="#">Du Lịch Nga</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="btn-mobile-TourNuocNgoai-My" href="#">Du Lịch Châu Mỹ <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNuocNgoai-My" class="hide">
+                            <li><a href="#">Du Lịch Canada</a></li>
+                            <li><a href="#">Du Lịch Mỹ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="btn-mobile-TourNuocNgoai-Uc" href="#">Du Lịch Châu Úc <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i></a>
+                        <ul id="mobile-TourNuocNgoai-Uc" class="hide">
+                            <li><a href="#">Du Lịch Sydney</a></li>
+                            <li><a href="#">Du Lịch Melbourne</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="./News.html">Tin Tức</a></li>
+            <li><a href="./contact.html">Liên Hệ</a></li>
+            <li>
+                <div id="mobile-box-search">
+                    <input type="text" style="width: 230px;" name="searchBar" placeholder="Tìm kiếm" class="rounded-0">
+                    <div class="btn btn-danger rounded-0" style="height: 36px;"><i class="fa-solid fa-magnifying-glass" style="text-shadow: none; font-size: 15px;"></i></div>
+                </div>
+            </li>
+            <li><a href="./Login.html">Đăng Nhập</a></li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- Меню рабочего стола -->
+    <a name="home"></a>
+    <nav id="menu-select" class="navbar navbar-expand-md p-0">
+        <div class="container-fluid fixed-top p-0" id="box--header__menu">
+            <div class="container collapse navbar-collapse d-flex align-items-center" id="navbarNav">
+                <a class="nav-item" href="#">
+                    <img id="logoWeb" src="./img/logoykt.png" width="120px" class="ms-1 pb-2 mt-1"/>
+                </a>
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#menu--main" aria-controls="menu--main" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse collapse justify-content-end" id="menu--main" >
+                    <ul style="z-index: 999999;" class="navbar-nav text-red me-1 text-uppercase text-shadow">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./TourTrongNuoc.html">ТУРЫ</a>
+                        </li>
+                        <li class="nav-item" id="TourNoiDia">
+                            <a class="nav-link text-white" href="./introduce.html">ОТДЫХ <i class="fa-solid fa-angle-down" style="font-size: 13px;"></i><sup><span class="ms-1 badge bg-danger">Скидки</span></sup></a>
+                            <table class="bg-light rounded hide" id="SubMenu_NoiDia" cellpadding="10px" >
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Чем заняться</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Проживание</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Перекус</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сувениры</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./News.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white pe-3" href="./Login.html">Авторизоваться</a>
+                        </li>
+                        <li class="line-left ps-2"></li>
+                        <li class="nav-item text-white" id="item--shopCart">
+                            <a class="nav-link text-white" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div id="box--shopCart" class="p-3 text-black text-capitalize hide" style="text-shadow: none; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                                <p>Chưa có sản phẩm trong giỏ hàng.</p>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slide -->
+    <div id="carouselSlideImg" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- button next -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSlideImg" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselSlideImg" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselSlideImg" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselSlideImg" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselSlideImg" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <!-- slide img-->
+        <div class="carousel-inner" style="height: 100vh;">
+            <div class="carousel-item active h-100">
+                <img src="./img/lenskie.jpg" class="d-block w-100 h-100 zoom-img img-fit" alt="image">
+                <div class="carousel-caption d-none d-md-block text-shadow transText-ani" style="margin-bottom: 60px;">
+                    <h3>Ленские столбы</h3>
+                    <p style="font-size: 17px;">Величественный монумент, созданный природой и временем, с самым широким спектром различных ландшафтов потрясающей красоты и научной ценности.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/tukulaanu.jpg" class="d-block w-100 h-100 zoom-img img-fit" alt="image">
+                <div class="carousel-caption d-none d-md-block text-shadow transText-ani" style="margin-bottom: 60px;">
+                    <h3>Тукулааны</h3>
+                    <p style="font-size: 17px;">Развеваемые песчаные дюны, внешне напоминающие барханы, расположенные в Якутии, в бассейне реки Лена.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/buluus.jpg" class="d-block w-100 h-100 zoom-img img-fit" alt="image">
+                <div class="carousel-caption d-none d-md-block text-shadow transText-ani" style="margin-bottom: 60px;">
+                    <h3>Булуус</h3>
+                    <p style="font-size: 17px;">Булуус является одним из уникальных памятников природы, которыми так богата Якутия. Сегодня Ледник Булуус в Якутии это лучшее место для туристов.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/kuruluur.jpg" class="d-block w-100 h-100 zoom-img img-fit" alt="image">
+                <div class="carousel-caption d-none d-md-block text-shadow transText-ani" style="margin-bottom: 60px;">
+                    <h3>Курулуур</h3>
+                    <p style="font-size: 17px;">Булуус является одним из уникальных памятников природы, которыми так богата Якутия. Сегодня Ледник Булуус в Якутии это лучшее место для туристов.</p>
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="./img/gorapobeda.jpg" class="d-block w-100 h-100 zoom-img img-fit" alt="image">
+                <div class="carousel-caption d-none d-md-block text-shadow transText-ani" style="margin-bottom: 60px;">
+                    <h3>Гора Победа</h3>
+                    <p style="font-size: 17px;">Булуус является одним из уникальных памятников природы, которыми так богата Якутия. Сегодня Ледник Булуус в Якутии это лучшее место для туристов.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselSlideImg" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselSlideImg" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+        </button>
+    </div>
+
+    <!-- панель поиска -->
+    <div id="search-bar" class="reveal container mt-5 mb-5 pb-5 line-bottom rounded-0">
+        <h3 class="text-uppercase text-center mb-5 pt-5 fw-bold">Фильтр туров</h3>
+        <div class="row  row-cols-1 row-cols-lg-6  g-4">
+            <!-- Название Мак -->
+            <div class="col dropdown d-flex justify-content-center">
+                <button class="btn btn-outline-dark dropdown-toggle h-100 rounded-0 w-100" type="button" data-bs-auto-close="outside" id="danhmuc-check" data-bs-toggle="dropdown" aria-expanded="false">
+                    Категория
+                </button>
+                <div class="dropdown-menu" aria-labelledby="danhmuc-check" id="danhmuc" style="min-width: 350px;">
+                    <!-- кап 1 -->
+                    <ul>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="duLichNuocNgoai">
+                                <label class="form-check-label" for="duLichNuocNgoai">
+                                    Туры в республике
+                                </label>
+                            </div>
+                            <!-- кап 2 -->
+                            <ul class="line-left">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dlCA">
+                                        <label class="form-check-label" for="dlCA">
+                                            Булуус
+                                        </label>
+                                    </div>
+                                    <ul class="line-left">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlHQ">
+                                                <label class="form-check-label" for="dlHQ">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlNB">
+                                                <label class="form-check-label" for="dlNB">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dlCAu">
+                                        <label class="form-check-label" for="dlCAu">
+                                            Ленские столбы
+                                        </label>
+                                    </div>
+                                    <ul class="line-left">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlAnh">
+                                                <label class="form-check-label" for="dlAnh">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlNga">
+                                                <label class="form-check-label" for="dlNga">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dlCMy">
+                                        <label class="form-check-label" for="dlCMy">
+                                            Гора Победа
+                                        </label>
+                                    </div>
+                                    <ul class="line-left">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlCana">
+                                                <label class="form-check-label" for="dlCana">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlMy">
+                                                <label class="form-check-label" for="dlMy">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="duLichTrongNuoc">
+                                <label class="form-check-label" for="duLichTrongNuoc">
+                                    Тур в Якутске
+                                </label>
+                            </div>
+                            <!-- кап 2 -->
+                            <ul class="line-left">
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dlmBac">
+                                        <label class="form-check-label" for="dlmBac">
+                                            ТУРОПЕРАТОР#1
+                                        </label>
+                                    </div>
+                                    <ul class="line-left">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlHaLong">
+                                                <label class="form-check-label" for="dlHaLong">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlHaNoi">
+                                                <label class="form-check-label" for="dlHaNoi">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div> 
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlSapa">
+                                                <label class="form-check-label" for="dlSapa">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dlmTrung">
+                                        <label class="form-check-label" for="dlmTrung">
+                                            ТУРОПЕРАТОР#1
+                                        </label>
+                                    </div>
+                                    <ul class="line-left">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlDaNang">
+                                                <label class="form-check-label" for="dlDaNang">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlDakLak">
+                                                <label class="form-check-label" for="dlDakLak">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlPhuYen">
+                                                <label class="form-check-label" for="dlPhuYen">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="dlmNam">
+                                        <label class="form-check-label" for="dlmNam">
+                                            ТУРОПЕРАТОР#1
+                                        </label>
+                                    </div>
+                                    <ul class="line-left">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlConDao">
+                                                <label class="form-check-label" for="dlConDao">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlPhuQuoc">
+                                                <label class="form-check-label" for="dlPhuQuoc">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="dlVungTau">
+                                                <label class="form-check-label" for="dlVungTau">
+                                                    ТУРОПЕРАТОР#1
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- цена -->
+            <div class="col dropdown d-flex justify-content-center">
+                <button class="btn btn-outline-dark dropdown-toggle w-100 h-100 rounded-0" type="button" id="gia-rad" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
+                    Цена
+                </button>
+                <ul id="gia" class="dropdown-menu" aria-labelledby="gia-rad" style="width: 300px;">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gia" value="" id="AllGia">
+                            <label class="form-check-label" for="AllGia">
+                                Все
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gia" value="" id="2tr">
+                            <label class="form-check-label" for="2tr">
+                                2,000 &#8381; - 5,000 &#8381;
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gia" value="" id="5tr">
+                            <label class="form-check-label" for="5tr">
+                                5,000 &#8381; - 10,000 &#8381;
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gia" value="" id="10tr">
+                            <label class="form-check-label" for="10tr">
+                                10,000 &#8381; - 15,000 &#8381;
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gia" value="" id="15tr">
+                            <label class="form-check-label" for="15tr">
+                                15,000 &#8381;  - 20,000 &#8381;
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Количество дней -->
+            <div class="col dropdown d-flex justify-content-center">
+                <button class="btn btn-outline-dark dropdown-toggle w-100 h-100 rounded-0" type="button" data-bs-auto-close="outside" id="soNgay-checkbox" data-bs-toggle="dropdown" aria-expanded="false">
+                    Количество дней
+                </button>
+                <ul class="dropdown-menu ps-4" aria-labelledby="soNgay-checkbox">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="15ngay">
+                            <label class="form-check-label" for="15ngay">
+                                15 дней
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="10ngay">
+                            <label class="form-check-label" for="10ngay">
+                                10 дней
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="20ngay">
+                            <label class="form-check-label" for="20ngay">
+                                20 дней
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="5ngay">
+                            <label class="form-check-label" for="5ngay">
+                                05 дней
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="12ngay">
+                            <label class="form-check-label" for="12ngay">
+                                12 дней
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Стартовые ворота -->
+            <div class="col dropdown d-flex justify-content-center">
+                <button class="btn btn-outline-dark dropdown-toggle rounded-0 w-100 h-100" type="button" id="khoiHanh-Checkbox" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
+                    Места
+                </button>
+                <ul class="dropdown-menu ps-4" aria-labelledby="khoiHanh-Checkbox" style="width:200px;">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="fromHaNoi">
+                            <label class="form-check-label" for="fromHaNoi">
+                                место1
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="fromTp-HCM">
+                            <label class="form-check-label" for="fromTp-HCM">
+                                место2
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Скидка -->
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-warning form-check rounded-0 p-0 w-100 h-100 justify-content-center">
+                    <input class="form-check-input ms-4" type="checkbox" value="" id="giamGia">
+                    <label class="form-check-label pe-2 pb-2 pt-2 me-1" for="giamGia">
+                        Скидка
+                    </label>
+                </button>
+            </div>
+            <!-- button tim -->
+            <div class="col d-flex justify-content-center">
+                <button class="btn btn-info d-flex pt-3 pb-3 rounded-0 h-100 w-100 justify-content-center" type="button">
+                    <i class="fa-solid fa-magnifying-glass mt-1 me-2"></i>Поиск
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Список горячих туров -->
+    <div class="reveal container-fluid text-center p-5 pb-5">
+        <h1 class="text-uppercase fs-2">Горячие туры</h1>
+        <p class="mb-5 fst-italic text-danger text-uppercase">Проверьте соответствующий тур и купите сейчас</p>
+        <div class="row row-cols-1 row-cols-md-3 g-6">
+            <div class="col mb-4">
+                <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour1.html">
+                    <div id="card-1" class="card h-100 hover-zoom">
+                        <img src="./img/lenskie.jpg" class="card-img-top" alt="...">
+                        <div class="card-body bg-opacity-100">
+                            <h5 class="card-title">Тур - Ленские стобы</h5>
+                            <p class="card-text pt-2">Ленские столбы 1 день Лучшая цена 2023.</p>
+                            <p><strike style="font-size: 13px;">20,000<sup>&#8381;</sup></strike> <b style="color:red;">10,000<sup>&#8381;</sup></b></p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-muted">Дата: 22/10/2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour2.html">
+                    <div class="card h-100 hover-zoom">
+                        <img src="./img/lenskie.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Тур - Ленские стобы</h5>
+                            <p class="card-text pt-2">Ленские столбы 1 день Лучшая цена 2023.</p>
+                            <p><strike style="font-size: 13px;">15,000<sup>&#8381;</sup></strike> <b style="color:red;">8,000<sup>&#8381;</sup></b></p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-muted">Дата: 23/10/2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour3.html">
+                    <div class="card h-100 hover-zoom">
+                        <img src="./img/lenskie.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Тур - Ленские стобы</h5>
+                            <p class="card-text pt-2">Ленские столбы 1 день Лучшая цена 2023.</p>
+                            <p><strike style="font-size: 13px;">25,000<sup>&#8381;</sup></strike> <b style="color:red;">20,000<sup>&#8381;</sup></b></p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-muted">Дата: 22/10/2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour4.html">
+                    <div class="card h-100 hover-zoom">
+                        <img src="./img/lenskie.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Тур - Ленские стобы</h5>
+                            <p class="card-text pt-2">Ленские столбы 1 день Лучшая цена 2023.</p>
+                            <p><strike style="font-size: 13px;">35,000<sup>&#8381;</sup></strike> <b style="color:red;">30,000<sup>&#8381;</sup></b></p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-muted">Дата: 22/10/2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour5.html">
+                    <div class="card h-100 hover-zoom">
+                        <img src="./img/lenskie.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Тур - Ленские стобы</h5>
+                            <p class="card-text">Ленские столбы 1 день Лучшая цена 2023.</p>
+                            <p><strike style="font-size: 13px;">45,000<sup>&#8381;</sup></strike> <b style="color:red;">42,000<sup>&#8381;</sup></b></p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-muted">Дата: 22/10/2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col mb-4">
+                <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour6.html">
+                    <div class="card h-100 hover-zoom">
+                        <img src="./img/lenskie.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Тур - Ленские стобы</h5>
+                            <p class="card-text">Ленские столбы 1 день Лучшая цена 2023.</p>
+                            <p><strike style="font-size: 13px;">45,000<sup>&#8381;</sup></strike> <b style="color:red;">32,000<sup>&#8381;</sup></b></p>
+                        </div>
+                        <div class="card-footer">
+                            <p class="text-muted">Дата: 22/10/2023</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Отзывы клиентов -->
+    <div id="comment-customer" class="container mb-5 reveal">
+        <h2 class="text-center text-uppercase pt-5 mt-5 mb-4">Отзывы</h2>
+        <div id="carouselNhanXetKhachHang" class="carousel slide pb-5" data-bs-ride="carousel">
+            <div class="carousel-inner w-50" style="margin: 0 auto;">
+                <div class="carousel-item text-justify active">
+                    <p>Я только что поехал в Гора Победа 12 сентября 2022 года.Чувствует вкусное качество еды.Инструкции слишком хороши, чтобы быть в восторге и дружелюбны.От имени семьи еще раз спасибо.</p>
+                    <p class="text-center"><b>Сестра: Маша Маша Машавна</b> / Учитель</p>
+                </div>
+                <div class="carousel-item text-justify">
+                    <p>Я только что совершил тур по Ленские столбы 15 февраля 2021 года.Почувствуйте поездку очень хорошо.Инструкции слишком хороши, чтобы быть в восторге и дружелюбны.Спасибо, тур агенству якутия.</p>
+                    <p class="text-center"><b>Брат: Иван Иванович Иван</Генеральный директор Якутии</p>
+                </div>
+                <div class="carousel-item text-justify">
+                    <p>TО, просто путешествуя в Курулуур 14 ноября 2021 года.Чувствует вкусное качество еды.Инструкции слишком хороши, чтобы быть в восторге и дружелюбны.От имени семьи еще раз спасибо, тур агенству якутия.</p>
+                    <p class="text-center"><b>Сестра: Алина Алина Алиновна</b> / Офисный персонал</p>
+                </div>
+                <div class="carousel-item text-justify">
+                    <p>Я только что поехал в Булуус 24 марта 2021 года.Чувствует вкусное качество еды.Инструкции слишком хороши, чтобы быть в восторге и дружелюбны.От имени семьи еще раз спасибо.</p>
+                    <p class="text-center"><b>Сестра: Алена Алена Аленовна</b> / Маркетолог</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Слайд IMG -->
+    <div class="container-fluid p-0 position-relative mb-5" style="height: 800px;">
+        <div class="img-slide-DaNang h-100">
+        </div>
+    </div>
+
+    <!-- Контент Слайд IMG -->
+    <div class="reveal container mt-5 mb-5">
+        <table align="center" class="text-center">
+            <th style="padding: 10px;" colspan="2">
+                <h2 class="mb-5">город - Якутск</h2>
+            </th>
+            <tr class="text-justify m-5" valign="top">
+                <td style="width: 70vh; padding:0 20px;">Якутск - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quas animi aliquid adipisci, suscipit deserunt illo dolore assumenda officia doloremque rem, cupiditate numquam. Veritatis magnam nihil libero facilis cumque totam?</td>
+                <td style="width: 45vh; padding:0 20px; border-left: 1.8px solid #fb3749">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium temporibus tenetur voluptas aliquid reprehenderit delectus obcaecati consequuntur totam molestiae commodi quos esse inventore, ipsum, consectetur dolor error! Animi, earum esse?.</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Почему выбирают нас -->
+    <div class="reveal container-fluid p-0 reveal">
+        <div class="img-fluid img-choose-me bg-black text-center text-white fs-5">
+            <h1 class="pt-5 pb-5 text-uppercase">Почему мы?</h1>
+            <div id="whychoose" class="container row row-cols-1 row-cols-lg-3 g-lg-5 mt-lg-3 box-center" style="padding-bottom: 100px;">
+                <div class="col load">
+                    <i style="font-size: 60px;" class="fa-solid fa-handshake pt-5 mb-5"></i>
+                    <h4 class="text-uppercase mb-4">Услуги</h4>
+                    <p>Один из ведущих подразделений в бронировании лучшего онлайн -тура в Якутске. Применивший самые современные технологии.</p>
+                </div>
+                <div class="col load">
+                    <i style="font-size: 60px;" class="fa-solid fa-headset mb-5 pt-5"></i>
+                    <h4 class="text-uppercase mb-4">Поддержка 24/7</h4>
+                    <p>Всегда отвечаем на вопросы всех клиентов независимо от дня.Свяжитесь сейчас, чтобы проверить.</p>
+                </div>
+                <div class="col load">
+                    <i style="font-size: 60px;" class="fa-solid fa-tags mb-5 pt-5"></i>
+                    <h4 class="text-uppercase mb-4">Доход</h4>
+                    <p>Девиз компании - туры для всех по разумной цене.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Информационный тур, мероприятия -->
+    <div class="container mt-5 pb-5 reveal">
+        <div class="row row-cols-sm-1 row-cols-md-4 g-3 text-center" style="font-size: 20px;">
+            <div class="col">
+                <i style="font-size: 50px; color: rgb(87, 87, 87);" class="fa-solid fa-person-circle-check"></i>
+                <h3 id="countHaiLong" class="mt-4 mb-2"><span></span>+</h3>
+                <p class="text-danger">Клиенты</p>
+            </div>
+            <div class="col">
+                <i style="font-size: 50px; color: rgb(87, 87, 87);" class="fa-solid fa-map-location-dot"></i>
+                <h3  id="countTour" class="mt-4 mb-2"><span></span>+</h3>
+                <p class="text-danger">Законченные туры</p>
+            </div>
+            <div class="col">
+                <i style="font-size: 50px; color: rgb(87, 87, 87);" class="fa-solid fa-briefcase"></i>
+                <h3  id="countBusiness" class="mt-4 mb-2"><span></span>+</h3>
+                <p class="text-danger">Предприятие</p>
+            </div>
+            <div class="col">
+                <i style="font-size: 50px; color: rgb(87, 87, 87);" class="fa-solid fa-clipboard-user"></i>
+                <h3 id="countStaff" class="mt-4 mb-2"><span></span>+</h3>
+                <p class="text-danger">Тур операторы</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Новости и скидки -->
+    <div id="news-vouchers" class="reveal container-fluid bg-black text-white text-center pb-5">
+        <div id="title-news-vouver" class="text-uppercase pt-5">
+            <h2>Новости и скидки</h2>
+            <p class="text-warning">Последние новости и скидки</p>
+        </div>
+        <div id="list-img-news" class="">
+            <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour1.html">
+                <div class="imgV bg-info" style="width: 100%; height: 400px;">
+                    <img src="./img/lenskie.jpg" class="w-100 h-100 img-fit blur-img"/>
+                    <div class="text-img-voucher text-black bg--gra pt-3 pb-3" style="display: none;">
+                        <h3>Ленские Столбы</h3>
+                        <p><strike style="font-size: 13px;">40,000<sup>&#8381;</sup></strike> <b style="color:red;">30,000<sup>&#8381;</sup></b></p>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour2.html">
+                <div class="imgV bg-info" style="width: 100%; height: 400px;">
+                    <img src="./img/kuruluur.jpg" class="w-100 h-100 img-fit blur-img"/>
+                    <div class="text-img-voucher text-black bg--gra pt-3 pb-3" style="display: none;">
+                        <h3>Курулуур</h3>
+                        <p><strike style="font-size: 13px;">25,000<sup>&#8381;</sup></strike> <b style="color:red;">15,000<sup>&#8381;</sup></b></p>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour3.html">
+                <div class="imgV bg-info" style="width: 100%; height: 400px;">
+                    <img src="./img/tukulaanu.jpg" class="w-100 h-100 img-fit blur-img"/>
+                    <div class="text-img-voucher text-black bg--gra pt-3 pb-3" style="display: none;">
+                        <h3>Тукулааны</h3>
+                        <p><strike style="font-size: 13px;">35,000<sup>&#8381;</sup></strike> <b style="color:red;">32,000<sup>&#8381;</sup></b></p>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour4.html">
+                <div class="imgV bg-info" style="width: 100%; height: 400px;">
+                    <img src="./img/lenskie.jpg" class="w-100 h-100 img-fit blur-img"/>
+                    <div class="text-img-voucher text-black bg--gra pt-3 pb-3" style="display: none;">
+                        <h3>Ленские Столбы</h3>
+                        <p><strike style="font-size: 13px;">35,000<sup>&#8381;</sup></strike> <b style="color:red;">30,000<sup>&#8381;</sup></b></p>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour5.html">
+                <div class="imgV bg-info" style="width: 100%; height: 400px;">
+                    <img src="./img/lenskie.jpg" class="w-100 h-100 img-fit blur-img"/>
+                    <div class="text-img-voucher text-black bg--gra pt-3 pb-3" style="display: none;">
+                        <h3>Ленские Столбы</h3>
+                        <p><strike style="font-size: 13px;">45,000<sup>&#8381;</sup></strike> <b style="color:red;">20,000<sup>&#8381;</sup></b></p>
+                    </div>
+                </div>
+            </a>
+            <a style="text-decoration: none; color: black;" href="./page_index_tour/Index-Tour6.html">
+                <div class="imgV bg-info" style="width: 100%; height: 400px;">
+                    <img src="./img/lenskie.jpg" class="w-100 h-100 img-fit blur-img"/>
+                    <div class="text-img-voucher text-black bg--gra pt-3 pb-3" style="display: none;">
+                        <h3>Ленские Столбы</h3>
+                        <p><strike style="font-size: 13px;">35,000<sup>&#8381;</sup></strike> <b style="color:red;">30,000<sup>&#8381;</sup></b></p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer" class="container-fluid img-footer bg-black text-white p-0">
+        <div class="container-fluid row row-cols-sm-1 row-cols-md-4 p-5">
+            <div class="col list-style-none" id="LienHe">
+                <h6>Контакты</h6>
+                <ul id="footer--lienhe">
+                    <li class="text-white">
+                        <i class="fa-solid fa-location-dot pe-3" style="color: yellow;"></i>  ул. Ленина 1, г.Якутск чёто чёто
+                    </li>
+                    <li>
+                        <a href="tel:1900 100 100"><i class="fa-solid fa-phone pe-3" style="color: yellow;"></i> 7914 666 666</a></li>
+                    <li>
+                        <a href="sendto:FakeTravel@gmail.com">
+                            <i class="fa-solid fa-envelope pe-3" style="color: yellow;"></i> travelykt@gmail.com
+                        </a>
+                    </li>
+                    <li class="text-white">
+                        Зарегистрируйтесь, чтобы быстро получить информацию о продвижении.
+                    </li>
+                    <li class="opacity-100">
+                        <input id="text-sendMail" style="width:180px;" type="text" placeholder="Электронная почта"/>
+                        <input id="btn-sendMail" type="submit" value="Подписаться"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="col" id="TinTuc">
+                <h6>Новости</h6>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                </ul>
+            </div>
+            <div class="col" id="GocKhachHang">
+                <h6>Угол клиента</h6>
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                </ul>
+            </div>
+            <div class="col" id="TourPhoBien">
+                <h6>Популярный тур</h6>
+                <div class="row row-cols-2 row-cols-md-3 g-3 mt-3">
+                    <div class="col">
+                        <img class="img-fit rectangle-100-60 img-tour-fv" src="./img/buluus.jpg" alt="img-1">
+                    </div>
+                    <div class="col">
+                        <img class="img-fit rectangle-100-60 img-tour-fv" src="./img/kuruluur.jpg" alt="img-1">
+                    </div>
+                    <div class="col">
+                        <img class="img-fit rectangle-100-60 img-tour-fv" src="./img/lenskie.jpg" alt="img-1">
+                    </div>
+                    <div class="col">
+                        <img class="img-fit rectangle-100-60 img-tour-fv" src="./img/gorapobeda.jpg" alt="img-1">
+                    </div>
+                    <div class="col">
+                        <img class="img-fit rectangle-100-60 img-tour-fv" src="./img/lenskie.jpg" alt="img-1">
+                    </div>
+                    <div class="col">
+                        <img class="img-fit rectangle-100-60 img-tour-fv" src="./img/lenskie.jpg" alt="img-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center" id="social-network">
+            <h6>Социальные сети</h6>
+            <ul class="p-0">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="text-center mt-5 pb-3">
+            &#169; 2023 Туристическое агенство Якутии
+        </div>
+    </div>
+
+    <!-- главная -->
+    <a href="#home" class="remove-decoration d-flex">
+        <div id="btn-backhome" class="hide">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
+
+</body>
+    <script src="./js/js-index.js"></script>
+</html>
